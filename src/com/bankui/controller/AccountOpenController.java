@@ -58,6 +58,7 @@ public class AccountOpenController {
 			ResponseEntity<UserInfo> entity = restTemplate.exchange(url, HttpMethod.GET, request, UserInfo.class);
 			UserInfo u = entity.getBody();
 			session.setAttribute("username", u.getUsername()); //JSESSIONID
+			session.setAttribute("password", user.getPassword()); //plain pass
 			model.addAttribute("user", u);
 			return "dashboard";
 		}
@@ -77,9 +78,9 @@ public class AccountOpenController {
 	}
 	
 	@RequestMapping("/logout")
-	public String showLogout(Model model,HttpSession session) {
+	public String showLogout(Model model, HttpSession session) {
 		model.addAttribute("user", user);
-		model.addAttribute("msg", "You are logged out successfully"); 
+		model.addAttribute("msg", "You are logged out");
 		session.invalidate();
 		return "login";
 	}
