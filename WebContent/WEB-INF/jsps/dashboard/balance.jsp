@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
- 
+<title>Transfer</title>
 </head>
 <c:import url="../header.jsp" />
 <body>
@@ -14,14 +14,33 @@
 		<div class="row">
 			<div class="col-lg-1"></div>
 			<div class="col-lg-10">
-			<div class="alert alert-dismissible alert-warning" style="height: 55px">
-				<nav aria-label="breadcrumb">
-					<ol class="breadcrumb">
-						<li class="breadcrumb-item"><a href="${pageContext.request.contextPath }/dashboard" style="text-decoration: none;">Dashboard</a></li>
-						<li class="breadcrumb-item active" aria-current="page">Balance</li>
-					</ol>
-				</nav>
+				<div class="alert alert-dismissible alert-warning"
+					style="height: 55px">
+					<nav aria-label="breadcrumb">
+						<ol class="breadcrumb">
+							<li class="breadcrumb-item"><a
+								href="${pageContext.request.contextPath }/dashboard"
+								style="text-decoration: none;">Dashboard</a></li>
+							<li class="breadcrumb-item active" aria-current="page">Balane</li>
+						</ol>
+					</nav>
 				</div>
+			</div>
+			<div class="col-lg-1"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<div class="card border-primary mb-3">
+					<div class="card-header">Balance</div>
+					<div class="card-body">
+					
+						
+						
+						
+					</div>
+				</div>
+
 			</div>
 			<div class="col-lg-1"></div>
 		</div>
